@@ -95,19 +95,33 @@ public class Interface_arvore_binaria {
                     break;
                 case 1: // caso de inserção na arvore binaria( ainda necessário definir como será feita a inserção)
                     if(ArvoreBinaria.isEmpty()){
+                    	System.out.println("- addRoot(e): cria um novo nodo que guarda o elemento e, sendo esse nodo a raíz da árvore e o\n" +
+                "retorna. Só funciona quando a árvore está vazia, caso contrário gera um erro.\n" +
+                "\n" +
+                "- insertLeft(v,e): cria um novo nodo que guarda o elemento e, tal nodo é colocado como filho da\n" +
+                "esquerda (left) do nodo v e retornado. Ocorre erro caso v já tenha filho da esquerda.\n" +
+                "\n" +
+                "- insertRight(v,e): cria um novo nodo que guarda o elemento e, tal nodo é colocado como filho da\n" +
+                "direita (right) do nodo v e retornado. Ocorre erro caso v já tenha filho da direita.\n" +
+                "\n");
                         System.out.println("Digite o número para a raiz da árvore: ");
                         inserir = entrada.nextInt();
                         ArvoreBinaria.addRoot(inserir);
                         System.out.println("O número " + inserir + " é raiz da árvore");
                     }
                     else{
+                    	System.out.println("- inserirnaArvore(valor,posicao,arvore): método que somente é chamado quando a arvore já possui a raiz,\n"
+                    					+ "e verifica a partir da raiz em qual posição será inserido o valor digitado pelo usuário\n");
                         System.out.println("Digite o numero que será inserido na árvore: ");
                         inserir = entrada.nextInt();
                         ArvoreBinaria.inserirnaArvore(inserir, ArvoreBinaria.root(), ArvoreBinaria);
                     }
                     break;
                 case 2:
-
+                	System.out.println("- remove(v): remove o nodo v e retorna o que estava armazenado. Se existir algum filho de v, esse\n" +
+						                "serve para substituí-lo. Ocorre erro caso v tenha dois filhos. \n" +
+						                "\n");
+                	
                     System.out.println("Digite o numero que será removido: ");
                     int remover = entrada.nextInt();
                     Position<Integer> encontrado = ArvoreBinaria.findbinaria(remover, ArvoreBinaria.root(), ArvoreBinaria);

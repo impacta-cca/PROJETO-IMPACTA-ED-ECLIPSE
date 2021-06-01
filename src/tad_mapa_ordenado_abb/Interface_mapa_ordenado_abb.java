@@ -76,8 +76,10 @@ public class Interface_mapa_ordenado_abb {
                 case 0: // Sair
                     alternador = false;
                     break;
-                case 1: // o caso de inserção pede para o usuario uma chave do tipo inteiro e um numero do tipo inteiro, e assim, usa o metodo pu
+                case 1: // Inserir
+					// o caso de inserção pede para o usuario uma chave do tipo inteiro e um numero do tipo inteiro, e assim, usa o metodo pu
                     // do mapa para inseri-los na mapa.
+					System.out.println("- put : insere um elemento na árvore aplicando a lógica > ou <.\n");
                     System.out.println("Digite o numero que será inserido");
                     inserir = entrada.nextInt();
                     System.out.println("Digite uma chave para o número que será inserido");
@@ -86,10 +88,12 @@ public class Interface_mapa_ordenado_abb {
                     MapaABB.put(key,inserir);
                     System.out.println("foi inserido no mapa é o número "+inserir+" que possui a chave "+key);
                     break;
-                case 2:
+                case 2: // Remover
+					System.out.println("- remove : remove e retorna um elemento da árvore e realoca os \n" 
+					+ "elementos para preencher o espaço vazio.\n");
                     System.out.println("Digite a chave do valor para remoção");
                     remocao = entrada.nextInt();
-                    System.out.println("O numero "+ MapaABB.remove(remocao) + "foi removido com sucesso");
+                    System.out.println("O numero "+ MapaABB.remove(remocao) + " foi removido com sucesso");
 
                     break;
                 case 3: //imprimir
@@ -99,7 +103,5 @@ public class Interface_mapa_ordenado_abb {
                     break;
             }
         }
-
-    }
-
+	}
 }

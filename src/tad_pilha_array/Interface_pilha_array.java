@@ -49,6 +49,22 @@ public class Interface_pilha_array {
                 "este valor, removê-lo, tanto como adicionar um novo.\n");
         System.out.println();
 
+		System.out.println("Como faz cada função ?\n" + 
+				"- push(x): faz a inserção do objeto x no topo da pilha. Se a pilha estiver vazia, "
+				+ "esse será seu primeiro elemento (base).\n" + 
+				"\n" + 
+				"- pop: faz a remoção do último elemento da pilha (no topo) e o retorna. Se a pilha "
+				+ "estiver vazia, ocorre erro.\n" + 
+				"\n" + 
+				"- size: retorna a quantidade de elementos empilhados na pilha.\n" + 
+				"\n" + 
+				"- isEmpty: retorna um valor booleano que diz se a pilha está vazia (true) ou não "
+				+ "(false).\n" + 
+				"\n" + 
+				"- top: verifica qual elemento está no topo da pilha e o retorna. Assim como o pop, "
+				+ "gera erro caso a lista esteja vazia.");
+		System.out.println();
+		
         boolean alternador = true;
         while (alternador) {
             Scanner entrada = new Scanner(System.in);

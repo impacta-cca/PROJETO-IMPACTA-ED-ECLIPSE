@@ -85,6 +85,16 @@ public class Interface_lista_de_nodos {
                     alternador = false;
                     break;
                 case 1: // caso de inserção na lista de nodos
+                	
+                	System.out.println(  "- addFirst: insere um novo elemento na primeira posição da lista.\n" +
+				                        "\n" +
+				                        "- addLast: insere um novo elemento na última posição da lista.\n" +
+				                        "\n" +
+				                        "- addBefore: insere um novo elemento antes de determinada posição da lista.\n" +
+				                        "\n" +
+				                        "- addAfter: insere um novo elemento depois de determinada posição da lista.\n" );
+				                	
+                	
                     System.out.println("Digite o numero que será inserido");
                     inserir = entrada.nextInt();
                     // caso a lista esteja vazia, é inserido na primeira posição o número digitado pelo usuário
@@ -100,6 +110,8 @@ public class Interface_lista_de_nodos {
                     break;
                 case 2: // cria uma Position remover que recebera  a primeira posição da lista de nodos e caso o elemento dele seja igual a o numero
                         // digitado pelo usuario, ira usar o metodo de remoção do lista nodo com ele, senão, ele passará para a proxima posição
+                	
+                	System.out.println("- remove: remove e retorna o elemento de determinada posição da lista, invalidando esta posição.\n");
                     System.out.println("Digite o numero que será removido: ");
                     int remover = entrada.nextInt();
                     Position<Integer> posremover = listaNodos.find(listaNodos.first(), remover);

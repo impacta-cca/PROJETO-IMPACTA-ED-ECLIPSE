@@ -73,6 +73,10 @@ public class Interface_lista_prioridade {
                     break;
                 case 1: // o caso de inserção pede para o usuario uma chave do tipo inteiro e um numero do tipo inteiro, e assim, usa o metodo insert
                         // da ListaPrioridade para inseri-los na lista.
+                	System.out.println("- insert: insere na lista um par chave + valor e retorna a entrada armazenada. Uma é lançada se a\n" +
+                "chave informada for inválida (se ela não for comparável com outras chaves).\n");
+                	System.out.println();
+                	
                     System.out.println("Digite o numero que será inserido");
                     inserir = entrada.nextInt();
                     System.out.println("Digite uma chave para o número que será inserido");
@@ -82,6 +86,8 @@ public class Interface_lista_prioridade {
                     System.out.println("foi inserido na lista de prioridades o número "+inserir+" que possui a chave "+key);
                     break;
                 case 2:
+                	System.out.println("- removeMin: remove e retorna da lista a entrada que possuir a menor chave. Uma exceção é lançada se\n" +
+                            "a fila estiver vazia.\n");
                     System.out.println("item com menor chave removido da lista: "+ListaPrioridade.removeMin().getValue());
                     break;
                 case 3: //imprimir

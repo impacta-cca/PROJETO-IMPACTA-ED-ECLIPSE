@@ -81,8 +81,13 @@ public class Interface_mapa {
                 case 0: // Sair
                     alternador = false;
                     break;
-                case 1: // o caso de inserção pede para o usuario uma chave do tipo inteiro e um numero do tipo inteiro, e assim, usa o metodo pu
+                case 1: 
+					// o caso de inserção pede para o usuario uma chave do tipo inteiro e um numero do tipo inteiro, e assim, usa o metodo pu
                     // do mapa para inseri-los na mapa.
+					System.out.println("- put: recebe uma entrada chave-valor. Se a chave informada jÃ¡ existir na lista, apenas substitui o\n" +
+                						"valor, retornando o valor antigo; se a chave nÃ£o existir ainda na lista, cria e adiciona uma entrada\n" +
+                						"nova com o par informado, retornando null. \n" +
+                						"\n");
                     System.out.println("Digite o numero que será inserido");
                     inserir = entrada.nextInt();
                     System.out.println("Digite uma chave para o número que será inserido");
@@ -91,11 +96,13 @@ public class Interface_mapa {
                     Mapa.put(key,inserir);
                     System.out.println("foi inserido no mapa é o número "+inserir+" que possui a chave "+key);
                     break;
-                case 2:
+                case 2: // Remove
+					System.out.println("- remove: remove a entrada da lista que possua a chave informada pelo usuÃ¡rio, e retorna o valor\n" +
+                						"armazenado nele; se a chave informada nÃ£o existir na lista, retorna null.\n" +
+                						"\n");
                     System.out.println("Digite a chave do valor para remoção");
                     remocao = entrada.nextInt();
-                    System.out.println("O numero "+ Mapa.remove(remocao) + "foi removido com sucesso");
-
+                    System.out.println("O numero "+ Mapa.remove(remocao) + " foi removido com sucesso");
                     break;
                 case 3: //imprimir
                     if(Mapa.isEmpty()){

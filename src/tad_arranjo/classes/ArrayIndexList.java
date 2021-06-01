@@ -12,7 +12,7 @@ public class ArrayIndexList<E> implements IndexList<E> {
 	@SuppressWarnings("unchecked")
 	public ArrayIndexList() {
 		A = (E[]) new Object[capacity]; // o comiplador pode gerar alerta aqui, mas est� tudo ok.
-
+		
 	}
 
 	// Retorna o n�mero de elementos da lista

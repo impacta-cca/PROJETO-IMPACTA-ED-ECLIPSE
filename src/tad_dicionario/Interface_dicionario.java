@@ -74,6 +74,7 @@ public class Interface_dicionario {
                     alternador = false;
                     break;
                 case 1: // caso de inserção na arvore binaria( ainda necessário definir como será feita a inserção)
+                	System.out.println("- put(k,v): insere no dicionário um novo objeto com chave k e que guarda o valor v e o retorna.\n");
                     System.out.println("Digite o numero que será inserido no dicionario? ");
                     inserir = entrada.nextInt();
 
@@ -84,6 +85,7 @@ public class Interface_dicionario {
 
                     break;
                 case 2:
+                	System.out.println( "- remove(e): remove o elemento e do dicionário e o retorna, caso não exista, retorna null.\n");
                     System.out.println("Digite a chave do numero que será removido: ");
                     int remover = entrada.nextInt();
                     System.out.println("O número " + Dicionario.remove(Dicionario.get(remover)) + " foi removido com sucesso");

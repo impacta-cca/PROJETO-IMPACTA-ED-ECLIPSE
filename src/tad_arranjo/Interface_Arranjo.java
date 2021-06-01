@@ -13,10 +13,11 @@ public class Interface_Arranjo {
 
         String[] funcionalidadesArranjo = {
                 "Sair",
-                "Inserir",
+				"Inserir item em dada posição",
+                "Adicionar item ao Arranjo",
                 "Remover",
-                "printar lista",
-                "consultar número"
+                "Exibir lista",
+                "Consultar número"
         };
 
         // Exibe titulo
@@ -46,7 +47,23 @@ public class Interface_Arranjo {
         System.out.println("O que pode fazer?\n" +
                             "Este tipo abstrato de dado lhe permite: pegar o valor armazenado em um elemento da coleção, alterar\n" +
                             "este valor, removê-lo, tanto como adicionar um novo.");
+        
+        System.out.println("set: substitui na coleção o valor de um elemento existente e retorna o valor antigo, a partir de seu\n"
+					+ "índice informado.");
+        
+        System.out.println("add:\n" +
+                "esse método insere um elemento novo na coleção, na posição do índice informado. Caso o usuário" +
+                "\nqueira inserir um elemento em uma posição já ocupada, o novo elemento assume a posição desejada e" +
+                "\nempurra seus posteriores para uma posição adiante.");
+        
+        System.out.println("remove:\n" +
+                "esse método remove da coleção o elemento pertencente ao índice informado. Caso o usuário remova um\n" +
+                "elemento diferente do último, os elementos anteriores são deslocados para ocupar a posição vazia, puxando-os para uma posição anterior.\n");
+System.out.println("Digite o numero que será inserido: ");
 
+        System.out.println();
+		System.out.println("Foi gerado um Arranjo de 16 posições para exemplo.");
+		System.out.println();
         //abertura do menu
         boolean alternador = true;
         while (alternador) {
@@ -58,30 +75,41 @@ public class Interface_Arranjo {
                     case 0: // Sair
                         alternador = false;
                         break;
-                    case 1: // Inserir
-                        System.out.println("add:\n" +
-                                "esse método insere um elemento novo na coleção, na posição do índice informado. Caso o usuário" +
-                                "\nqueira inserir um elemento em uma posição já ocupada, o novo elemento assume a posição desejada e" +
-                                "\nempurra seus posteriores para uma posição adiante.");
-                        System.out.println("Digite o numero que será inserido: ");
-                        inserir = entrada.nextInt();
-                        System.out.println("Digite a posição que será inserido:  ");
-                        indice = entrada.nextInt()-1;
-                        try{
-                            arranjo.add(indice, inserir);
-                        }catch (Exception e) {
-                            System.out.println("ERRO: Índice digitado menor ou igual a 0 ou é maior que 16.");
-
-                        }
-                        //chamar metodo do TAD para inserção com o parametro a variavel 'inserir'
-                        break;
-                    case 2: //remover
-
+                    case 1: // Inserir item em dada posição
+                    	  System.out.println("set: substitui na coleção o valor de um elemento existente e retorna o valor antigo, a partir de seu\n"
+                    	  					+ "índice informado.");
+                          System.out.println("Digite a posição do número que será alterado: ");
+                          indice = entrada.nextInt();
+                          System.out.println("Digite o numero que será inserido na posição escolhida: ");
+                          inserir = entrada.nextInt();
+                          try{
+                              arranjo.set(indice, inserir);
+                          }catch (Exception e) {
+                              System.out.println("ERRO: Índice digitado menor que 0 ou é maior que 16.");
+                          }
+                          //chamar metodo do TAD para inserção com o parametro a variavel 'inserir'
+                          break;
+                    case 2: //Adicionar item ao Arranjo
+						System.out.println("add:\n" +
+				                           "esse método insere um elemento novo na coleção, na posição do índice informado. Caso o usuário" +
+				                           "\nqueira inserir um elemento em uma posição já ocupada, o novo elemento assume a posição desejada e" +
+				                           "\nempurra seus posteriores para uma posição adiante.");
+                         System.out.println("Digite o numero que será inserido: ");
+                         try{
+                        	 inserir = entrada.nextInt();
+                             arranjo.add(0, inserir);
+                         }catch (Exception e) {
+                        	 System.out.println("ERRO: Digite um número inteiro.");
+                         }
+                         //chamar metodo do TAD para inserção com o parametro a variavel 'inserir'
+                         break;
+                    	             
+                    case 3: //remover
                         System.out.println("remove:\n" +
                                 "esse método remove da coleção o elemento pertencente ao índice informado. Caso o usuário remova um\n" +
                                 "elemento diferente do último, os elementos anteriores são deslocados para ocupar a posição vazia, puxando-os para uma posição anterior.\n");
                         System.out.println("Digite a posição do numero que será removido");
-                        indice = entrada.nextInt()-1;
+                        indice = entrada.nextInt();
                         try {
                             arranjo.remove(indice);
                         }catch (Exception e){
@@ -89,12 +117,12 @@ public class Interface_Arranjo {
                         }
                         //chamar metodo do TAD para inserção com o parametro a variavel 'remover'
                         break;
-                    case 3: //imprimir
+                    case 4: //imprimir
                         System.out.println(arranjo.toString());
                         // chamar metodo para imprimir importado do TAD
                         break;
-                    case 4:
-                        System.out.println("qual número deseja procura na lista de nodo");
+                    case 5:
+                        System.out.println("Qual número deseja procura na Lista Arranjo?");
                         int procurar = entrada.nextInt();
                         boolean achado = false;
                         int posicao = 0;
@@ -110,6 +138,7 @@ public class Interface_Arranjo {
                         }else{
                         System.out.println("O número não foi encontrado no arranjo");
                         }
+                        break;
                 }
         }
     }

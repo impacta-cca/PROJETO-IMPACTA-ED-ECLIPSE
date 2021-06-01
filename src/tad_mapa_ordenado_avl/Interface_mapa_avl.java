@@ -72,6 +72,11 @@ public class Interface_mapa_avl {
                     break;
                 case 1: // o caso de inserção pede para o usuario uma chave do tipo inteiro e um numero do tipo inteiro, e assim, usa o metodo pu
                     // do mapa para inseri-los na mapa.
+                	System.out.println("- put : insere um elemento na árvore, buscando pela posição ideal de inserção e fazendo a verificação\n" +
+                						"de balanceamento de altura. Caso a inserção ocasione um desbalanceamento na árvore, este método deverá\n" +
+                						"automaticamente fazer a chamada de outro método, que reestruturará a árvore de tal maneira a manter\n" +
+                						"seu equilíbrio, mudando as posições dos elementos.\n");
+                	
                     System.out.println("Digite o numero que será inserido");
                     inserir = entrada.nextInt();
                     System.out.println("Digite uma chave para o número que será inserido");
@@ -81,6 +86,13 @@ public class Interface_mapa_avl {
                     System.out.println("foi inserido no mapa é o número "+inserir+" que possui a chave "+key);
                     break;
                 case 2:
+                	
+                	System.out.println("- remove : remove um elemento da árvore. Novamente, caso a inserção ocasione um desbalanceamento na\n" +
+						                "árvore, este método deverá automaticamente fazer a chamada de outro método, que reestruturará a árvore\n" +
+						                "de tal maneira a manter seu equilíbrio, mudando as posições dos elementos. Este método pode lançar\n" +
+						                "uma exceção caso o usuário tente remover um elemento inexistente na árvore.\n" );
+						               
+                	
                     System.out.println("Digite a chave do valor para remoção");
                     remocao = entrada.nextInt();
                     System.out.println("O numero "+ MapaAVL.remove(remocao) + "foi removido com sucesso");

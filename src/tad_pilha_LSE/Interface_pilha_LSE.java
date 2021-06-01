@@ -43,6 +43,18 @@ public class Interface_pilha_LSE {
         System.out.println("O que ela pode fazer ?\n" +
                 "Este tipo abstrato de dado lhe permite: pegar o valor armazenado em um elemento da coleção, alterar\n" +
                 "este valor, removê-lo, tanto como adicionar um novo.\n");
+        
+        System.out.println("push(x):\n" +
+                "Esse método faz a inserção do objeto x no topo da pilha. Se a pilha estiver vazia, esse será seu\n" +
+                "primeiro elemento (base).");
+        
+        System.out.println("pop:\n" +
+                "Esse método faz a remoção do último elemento da pilha (no topo) e o retorna. Se a pilha estiver\n" +
+                "vazia, ocorre erro.\n");
+        
+        System.out.println("top:\n" +
+                "Esse método verifica qual elemento está no topo da pilha e o retorna. Assim como o pop, gera erro\n" +
+                "caso a lista esteja vazia.\n");
 
         boolean alternador = true;
         while (alternador) {
