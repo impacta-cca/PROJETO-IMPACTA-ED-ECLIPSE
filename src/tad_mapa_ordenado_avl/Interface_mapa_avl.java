@@ -95,7 +95,7 @@ public class Interface_mapa_avl {
                 	
                     System.out.println("Digite a chave do valor para remoção");
                     remocao = entrada.nextInt();
-                    System.out.println("O numero "+ MapaAVL.remove(remocao) + "foi removido com sucesso");
+                    System.out.println("O numero "+ MapaAVL.remove(remocao) + " foi removido com sucesso");
 
                     break;
                 case 3: //imprimir
