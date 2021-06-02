@@ -10,5 +10,4 @@ INTEGRANTES:
 - Larissa Ionafa
 - Roberta Yumi
 
-******** Observação ********
-Necessário alterar o encoding do projeto para UTF-8 para melhor visualização.
+*OBSSERVAÇÃO:* Necessário alterar o encoding do projeto para UTF-8 para melhor visualização.
