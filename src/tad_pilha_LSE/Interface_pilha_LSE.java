@@ -41,8 +41,9 @@ public class Interface_pilha_LSE {
                 "da pilha, podendo inserir algo ou retirar algo através dos métodos que a acompanham.");
         System.out.println();
         System.out.println("O que ela pode fazer ?\n" +
-                "Este tipo abstrato de dado lhe permite: pegar o valor armazenado em um elemento da coleção, alterar\n" +
-                "este valor, removê-lo, tanto como adicionar um novo.\n");
+                "Este tipo abstrato de dado permite: adicionar novos valores, sempre no topo e acessá-lo ou removê-lo\n"
+                + "quando necessário, conferir a quantidade de elementos empilhados e por fim, saber se a pilha está ou não vazia.");
+        System.out.println();
         
         System.out.println("push(x):\n" +
                 "Esse método faz a inserção do objeto x no topo da pilha. Se a pilha estiver vazia, esse será seu\n" +

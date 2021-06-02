@@ -2,7 +2,7 @@ package tad_mapa_ordenado_avl;
 
 import interfaces.Interface;
 import tad_mapa_ordenado_avl.classes.AVLTreeMap;
-
+import tad_mapa_ordenado_avl.exception.InvalidKeyException;
 
 import java.util.Scanner;
 
@@ -95,8 +95,13 @@ public class Interface_mapa_avl {
                 	
                     System.out.println("Digite a chave do valor para remoção");
                     remocao = entrada.nextInt();
-                    System.out.println("O numero "+ MapaAVL.remove(remocao) + " foi removido com sucesso");
-
+                  try {
+                	 	String resul =Integer.toString(MapaAVL.remove(remocao));
+                    	System.out.println("O numero "+ resul + " foi removido com sucesso");
+                    }catch (Exception e) {
+                    	System.out.println("A chave inserida é invalida");
+					}
+                   
                     break;
                 case 3: //imprimir
                     System.out.println("Chave: \t" + MapaAVL.keySet().toString());

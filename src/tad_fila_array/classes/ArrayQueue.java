@@ -69,14 +69,19 @@ public class ArrayQueue<E> implements Queue<E> {
 
 		s = "[";
 
-		if (size() > 0)
-			s += Q[0];
-
-		if (size() > 1) {
-
-			for (int i = 1; i <= size() - 1; i++) {
-
-				s += ", " + Q[i];
+		if (size() > 0) {
+			boolean primeiro = false;
+			for (int i = 0; i <= size()+1 ; i++) {
+				if(Q[i]!=null) {
+				if(primeiro == false) {
+					s+=Q[i];
+					primeiro = true;
+				}
+				else {
+					s+=" ,"+Q[i];
+				}
+				
+				}
 
 			}
 
