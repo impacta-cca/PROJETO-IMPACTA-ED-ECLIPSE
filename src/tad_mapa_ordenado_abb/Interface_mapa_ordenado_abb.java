@@ -19,7 +19,7 @@ public class Interface_mapa_ordenado_abb {
                 "Sair",
                 "Inserir",
                 "Remover",
-                "imprimir",
+                "Imprimir"
 
         };
 

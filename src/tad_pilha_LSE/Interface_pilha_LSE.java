@@ -18,7 +18,7 @@ public class Interface_pilha_LSE {
                 "Inserir",
                 "Remover",
                 "Imprimir",
-                "consultar número no topo da pilha"
+                "Consultar número no topo da pilha"
         };
 
         // Exibe título

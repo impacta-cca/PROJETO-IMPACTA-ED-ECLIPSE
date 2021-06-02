@@ -59,7 +59,6 @@ public class Interface_Arranjo {
 		System.out.println("remove:\n" +
 				"esse método remove da coleção o elemento pertencente ao índice informado. Caso o usuário remova um\n" +
 				"elemento diferente do último, os elementos anteriores são deslocados para ocupar a posição vazia, puxando-os para uma posição anterior.\n");
-		System.out.println("Digite o numero que será inserido: ");
 
 		System.out.println();
 		System.out.println("Foi gerado um Arranjo de 16 posições para exemplo.");

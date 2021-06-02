@@ -18,7 +18,7 @@ public class Interface_mapa_avl {
                 "Sair",
                 "Inserir",
                 "Remover",
-                "imprimir",
+                "Imprimir"
 
         };
 

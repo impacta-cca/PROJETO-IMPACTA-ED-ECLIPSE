@@ -17,7 +17,7 @@ public class Interface_mapa {
                 "Sair",
                 "Inserir",
                 "Remover",
-                "imprimir",
+                "Imprimir"
 
         };
 

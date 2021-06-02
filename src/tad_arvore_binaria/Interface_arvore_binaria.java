@@ -18,7 +18,7 @@ public class Interface_arvore_binaria {
                 "Sair",
                 "Inserir",
                 "Remover",
-                "desenhar arvore",
+                "Desenhar árvore"
 
         };
 

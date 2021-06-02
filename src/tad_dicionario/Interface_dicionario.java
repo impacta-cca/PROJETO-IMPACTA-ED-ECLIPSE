@@ -21,7 +21,7 @@ public class Interface_dicionario {
                 "Sair",
                 "Inserir",
                 "Remover",
-                "imprimir",
+                "Imprimir"
 
         };
 

@@ -17,7 +17,7 @@ public class Interface_lista_prioridade {
                 "Sair",
                 "Inserir",
                 "Remover",
-                "imprimir",
+                "Imprimir"
         };
 
         // Exibe título
