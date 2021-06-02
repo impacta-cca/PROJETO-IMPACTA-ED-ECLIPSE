@@ -8,6 +8,7 @@ import tad_mapa_ordenado_avl.Interface_mapa_avl;
 import tad_pilha_array.Interface_pilha_array;
 import tad_pilha_LSE.Interface_pilha_LSE;
 import tad_fila_array.Interface_fila_array;
+import tad_grafos.Interfaces_Grafos;
 import tad_fila_LSE.Interface_fila_LSE;
 import tad_lista_de_nodos.Interface_lista_de_nodos;
 import tad_arvore_generica.Interface_arvore_generica;
@@ -55,6 +56,7 @@ public class Main {
         Interface_dicionario IDict = new Interface_dicionario();
         Interface_mapa_ordenado_abb IMapaABB = new Interface_mapa_ordenado_abb();
         Interface_mapa_avl IMapaAVl = new Interface_mapa_avl();
+        Interfaces_Grafos IGrafos = new Interfaces_Grafos();
 
 
         //Chama menu para escolher estrutura de dados para exibir informações
@@ -114,6 +116,7 @@ public class Main {
                     IMapaAVl.mapaOrdenadoAVL();
                     break;
                 case 14: // TAD-Grafos
+                	IGrafos.grafos();
                     break;
             }
         }
